@@ -1,0 +1,94 @@
+/* Custom styling for Course Management System */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary-color: #475569;
+    --bg-light: #f8fafc;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+}
+
+.table th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.badge-short-term {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-weight: 600;
+}
+
+.badge-long-term {
+    background-color: #ede9fe;
+    color: #6d28d9;
+    font-weight: 600;
+}
+
+.thumbnail-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.gallery-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-card img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.is-thumbnail-border {
+    border: 3px solid #f59e0b !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
